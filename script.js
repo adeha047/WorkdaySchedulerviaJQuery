@@ -36,10 +36,10 @@ $(document).ready(function () {
         //console.log(rightNow)
         var currentHour = rightNow.getHours();
         //currentHour = 15
-        console.log("currentHour =" + currentHour)
+       // console.log("currentHour =" + currentHour)
         $(".description").each(function (i) {
             var timeBlock = parseInt($(this).attr("value"))
-            console.log("timeblock =" + timeBlock)
+            //console.log("timeblock =" + timeBlock)
 
             if (timeBlock < currentHour) {
                 $(this).addClass("past");
