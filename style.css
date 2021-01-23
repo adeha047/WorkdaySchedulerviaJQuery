@@ -5,6 +5,12 @@ body {
   line-height: 1;
 }
 
+.container {
+
+  display: inline
+
+}
+
 textarea{
   background: transparent;
   border: none;
@@ -16,7 +22,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: darkblue;
+  background-color: lightblue;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
@@ -33,13 +39,11 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 100px;
+  height: 2px;
   border-top: 1px solid white;;
 }
 
 .hour {
-  margin:25px;
-  padding: 50px;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;

@@ -1,6 +1,10 @@
 $(document).ready(function () {
+    //added the current date using Date Object(No Moment was used in this code)
     rightNow = new Date();
+    //added the JS version of the current day to appear in the page or HTML. 
     $("#currentDay").html(rightNow)
+
+    //called the right now function 
 
     setTimeClass(rightNow)
 
