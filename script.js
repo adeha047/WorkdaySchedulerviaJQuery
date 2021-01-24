@@ -15,7 +15,7 @@ $(document).ready(function () {
             var text = $(this).val()
             var time = $(this).attr("id")
             //console.log(time, text)
-
+            //sets the local storagae for time and text variables from the html
             localStorage.setItem(time, text)
         });
 
@@ -24,6 +24,8 @@ $(document).ready(function () {
 
 
     });
+
+    //calls the value for the local storage
 
     $("#hour8.description").val(localStorage.getItem("hour8"));
     $("#hour9.description").val(localStorage.getItem("hour9"));
@@ -44,7 +46,7 @@ $(document).ready(function () {
         $(".description").each(function (i) {
             var timeBlock = parseInt($(this).attr("value"))
             //console.log("timeblock =" + timeBlock)
-
+            // If statement to run through the past present and future timeblocks 
             if (timeBlock < currentHour) {
                 $(this).addClass("past");
                 $(this).removeClass("future");
